@@ -1,0 +1,52 @@
+package item;
+
+public class Item {
+  // Atributos de classe
+  private int id;
+  private String nome;
+  private double preco;
+  private int quantEmEstoque;
+
+  // Métodos construtores
+  public Item() {}
+
+  public Item(int id, String nome, double preco, int quantEmEstoque) {
+    this.id = id;
+    this.nome = nome;
+    this.preco = preco;
+    this.quantEmEstoque = quantEmEstoque;
+  }
+
+  // Métodos de acesso
+  public int getId() {
+    return id;
+  }
+
+  public void setId(int id) {
+    this.id = id;
+  }
+
+  public String getNome() {
+    return nome;
+  }
+
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+
+  public double getPreco() {
+    return preco;
+  }
+
+  public void setPreco(double preco) {
+    this.preco = preco;
+  }
+
+  public int getQuantEmEstoque() {
+    return quantEmEstoque;
+  }
+
+  public void setQuantEmEstoque(int quantEmEstoque) {
+    this.quantEmEstoque = quantEmEstoque;
+  }
+}
