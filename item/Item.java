@@ -49,4 +49,20 @@ public class Item {
   public void setQuantEmEstoque(int quantEmEstoque) {
     this.quantEmEstoque = quantEmEstoque;
   }
+
+  // Métodos da classe
+  public void venda(int quantidade) {
+    if (this.quantEmEstoque - quantidade >= 0) {
+      this.quantEmEstoque -= quantidade;
+      System.out.printf(
+          "%d %s vendidos. %d restando no estoque.\n", quantidade, this.nome, this.quantEmEstoque);
+    } else {
+      System.out.println("Estoque insuficiente.");
+    }
+  }
+
+  public void adicionarEstoque(int quantidade) {
+    this.quantEmEstoque += quantidade;
+    System.out.printf("%d %s em estoque.\n", this.quantEmEstoque, this.nome);
+  }
 }
