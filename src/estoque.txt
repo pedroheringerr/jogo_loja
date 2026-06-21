@@ -1,0 +1,2 @@
+Arma;1;Espada curva;20.0;0;76;10
+Pocao;2;Poção de Cura;7.0;45;Cura;P

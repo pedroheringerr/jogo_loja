@@ -51,18 +51,18 @@ public class Item {
   }
 
   // Métodos da classe
-  public void venda(int quantidade) {
+  public String venda(int quantidade) {
     if (this.quantEmEstoque - quantidade >= 0) {
       this.quantEmEstoque -= quantidade;
-      System.out.printf(
+      return String.format(
           "%d %s vendidos. %d restando no estoque.\n", quantidade, this.nome, this.quantEmEstoque);
     } else {
-      System.out.println("Estoque insuficiente.");
+      return "Estoque insuficiente.";
     }
   }
 
-  public void adicionarEstoque(int quantidade) {
+  public String adicionarEstoque(int quantidade) {
     this.quantEmEstoque += quantidade;
-    System.out.printf("%d %s em estoque.\n", this.quantEmEstoque, this.nome);
+    return String.format("%d %s em estoque.\n", this.quantEmEstoque, this.nome);
   }
 }
